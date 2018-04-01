@@ -1,0 +1,26 @@
+{
+    "name": "meanapp1",
+    "version": "1.0.0",
+    "description": "app using mean stack",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app"
+    },
+    "author": "Eric Johnson",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "*",
+        "body-parser": "*",
+        "cors": "*",
+        "express": "*",
+        "jsonwebtoken": "*",
+        "mongoose": "*",
+        "npm": "^5.8.0",
+        "passport": "*",
+        "passport-jwt": "*"
+    },
+    "devDependencies": {
+        "@angular/cli": "^1.7.3"
+    }
+}

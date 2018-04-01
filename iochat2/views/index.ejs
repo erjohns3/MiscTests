@@ -1,0 +1,32 @@
+<% include partials/header %>
+    <h1>Add Users</h1>
+    <% if(errors){ %>
+        <ul>
+        <% for(let i=0; i<errors.length; i++){ %>
+            <li><%= errors[i].msg %></li>
+        <% } %>
+        </ul>
+    <% } %>
+    <form method="POST" action="/users/add">
+        <label>First Name</label>
+        <br>
+        <input type="text" name="firstname">
+        <br>
+        <label>Last Name</label>
+        <br>
+        <input type="text" name="lastname">
+        <br>
+        <label>Email</label>
+        <br>
+        <input type="text" name="email">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1><%= title %></h1>
+    <ul>
+    <% for(let i=0; i<users.length; i++){ %>
+        <li><%= users[i].first_name %> <%= users[i].last_name %> - <a href="#" class="deleteButton" data-idnum="<%= users[i]._id %>">Delete</a></li>
+    <% } %>
+    </ul>
+<% include partials/footer %>

@@ -1,0 +1,37 @@
+{
+    first_name: "John",
+    last_name: "",
+
+}
+
+db.createUser({
+    user: "Eric",
+    pwd: "Fd@tst1109",
+    roles: ["readWrite", "dbAdmin"]
+});
+
+db.users.insert([
+    {
+        first_name: "John",
+        last_name: "Doe",
+        email: "jdoe@gmail.com"
+    },
+    {
+        first_name: "Mary",
+        last_name: "Berry",
+        email: "mberry@gmail.com"
+    },
+    {
+        first_name: "Eric",
+        last_name: "Derrick",
+        email: "ederrick@gmail.com"
+    }
+]);
+
+db.users.insert(
+    {
+        first_name: "Jen",
+        last_name: "Williams",
+        email: "jwilliams@gmail.com"
+    }
+);
